@@ -9,12 +9,6 @@ A sleek and functional Pokedex application built with Flutter. This app interact
 * **🎒 Item List**: Comprehensive list of items from the Pokémon world, including costs and descriptions.
 * **✨ Clean UI**: Organized detail pages with adaptive containers and cleaned-up flavor text (no more weird `\n` characters!).
 
-## 📸 Screenshots
-
-| Pokémon List | Search & Details | Item List |
-| :---: | :---: | :---: |
-|  |  |  |
-
 ## 🛠️ Installation & Setup
 
 1.  **Clone the repository:**

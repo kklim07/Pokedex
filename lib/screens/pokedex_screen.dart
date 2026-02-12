@@ -33,6 +33,8 @@ class _PokedexScreenState extends State<PokedexScreen> {
   String? _itemsError;
   String? _searchError;
   int _selectedIndex = 0;
+  double _pokemonScrollPosition = 0;
+  double _itemsScrollPosition = 0;
 
   @override
   void initState() {
@@ -197,6 +199,19 @@ class _PokedexScreenState extends State<PokedexScreen> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: (idx) {
+          if (_selectedIndex == 0) {
+            _pokemonScrollPosition = _pokemonScrollController.offset;
+          } else if (_selectedIndex == 1) {
+            _itemsScrollPosition = _itemsScrollController.offset;
+          }
+          Future.delayed(Duration.zero, () {
+            if (idx == 0 && _pokemonScrollController.hasClients) {
+              _pokemonScrollController.jumpTo(_pokemonScrollPosition);
+            } else if (idx == 1 && _itemsScrollController.hasClients) {
+              _itemsScrollController.jumpTo(_itemsScrollPosition);
+            }
+          });
+          
           setState(() {
             _selectedIndex = idx;
           });

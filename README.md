@@ -1,17 +1,35 @@
-# pokedex
+# 📱 Pokedex App (Flutter)
 
-A new Flutter project.
+A sleek and functional Pokedex application built with Flutter. This app interacts with the [PokeAPI](https://pokeapi.co/) to provide real-time data on Pokémon and items.
 
-## Getting Started
+## 🚀 Features
 
-This project is a starting point for a Flutter application.
+* **🔍 Search System**: Find any Pokémon instantly by name or ID.
+* **🐲 Pokémon List**: Infinite scrolling list of Pokémon featuring high-quality official artwork.
+* **🎒 Item List**: Comprehensive list of items from the Pokémon world, including costs and descriptions.
+* **✨ Clean UI**: Organized detail pages with adaptive containers and cleaned-up flavor text (no more weird `\n` characters!).
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Installation & Setup
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/kklim07/Pokedex.git](https://github.com/kklim07/Pokedex.git)
+    cd Pokedex
+    ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2.  **Install dependencies:**
+    ```bash
+    flutter pub get
+    ```
+
+3.  **Run the app:**
+    ```bash
+    flutter run
+    ```
+
+## 📦 Building the APK
+
+To generate a release build for your Android device:
+
+```bash
+flutter build apk --release
